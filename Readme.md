@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Павел Уваров](https://up.htmlacademy.ru/adaptive/18/user/1148921).
-* Наставник: `Геннадий Максимов`.
+* Наставник: [Геннадий Максимов](https://htmlacademy.ru/profile/gennadiy).
 
 ---
 
