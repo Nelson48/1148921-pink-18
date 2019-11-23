@@ -43,8 +43,118 @@
         Конкурс на самое безбашенное путешествие с Пинк
       </h2>
     </div>
+  <section class="contest-feedback">
+    <form class="contest-feedback__form" method="post" action="https://echo.htmlacademy.ru">
+      <p class="contest-action">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
+        <span>бонусную карту! Пожалуйста, заполните форму ниже:</span>
+      </p>
+      <fieldset class="contest-feedback__block feedback">
+        <ul class="contest-feedback__list">
+          <li class="contest-feedback__item">
+            <label class="label label--text" for="name">Фамилия:</label>
+            <input class="contest-text" type="text" name="name" id="name" placeholder="Укажите фамилию *" required>
+          </li>
+          <li class="contest-feedback__item">
+              <label class="label label--text" for="name">Имя:</label>
+              <input class="contest-text" type="text" name="name-text" id="name" placeholder="Введите Ваше имя *" required>
+          </li>
+          <li class="contest-feedback__item">
+              <label class="label label--text" for="name">Отчество:</label>
+              <input class="contest-text" type="text" name="name-text" id="name" placeholder="Ну и отчетсво тоже">
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="contest-feedback__action-app contest-feedback__action-app--apps">
+        <legend class="contest-feedback__title">С каким приложением путешествовали?</legend>
+        <ul class="contest-feedback__list">
+          <li class="contest-feedback__item">
+            <input class="point" type="radio" name="ios" id="ios">
+            <label class="label label--radio" for="ios">Pink для iOS</label>
+          </li>
+          <li class="contest-feedback__item">
+              <input class="point" type="radio" name="android" id="android">
+              <label class="label label--radio" for="android">Pink на Android</label>
+          </li>
+          <li class="contest-feedback__item">
+              <input class="point" type="radio" name="windows" id="windows">
+              <label class="label label--radio" for="windows">Windows Phone</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="contest-feedback__contats contest-feedback__contats--info">
+        <legend class="contest-feedback__title">Контактная информация</legend>
+        <ul class="contest-feedback__list">
+          <li class="contest-feedback__item contest-feedback__item--telephone">
+              <label class="label label--text" for="phone-number">номер телефона</label>
+              <input class="telephone" type="tel" name="phone-numb" id="phone-number" pattern="{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" placeholder="Номер, пожалуйста">
+          </li>
+          <li class="contest-feedback__item contest-feedback__item--email">
+              <label class="label label--text" for="email">Адрес почты</label>
+              <input class="email" type="email" name="email" id="email" placeholder="Введите почту *" required>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="contest-feedback__progress contest-feedback__progress--xz">
+        <legend class="contest-feedback__title">Ваши безбашенные достижения в путешествии</legend>
+        <ul class="contest-feedback__list">
+          <li class="contest-feedback__item">
+            <input class="checkbox" type="checkbox" name="shark" id="shark" checked>
+            <label class="label label--checkbox" for="shark">Сделал селфи с акулой</label>
+          </li>
+          <li class="contest-feedback__item">
+              <input class="checkbox" type="checkbox" name="beach" id="beach" checked>
+              <label class="label label--checkbox" for="beach">Обгорел на пляже</label>
+          </li>
+          <li class="contest-feedback__item">
+              <input class="checkbox" type="checkbox" name="norris" id="norris" checked>
+              <label class="label label--checkbox" for="norris">Видел Чака Норриса</label>
+          </li>
+          <li class="contest-feedback__item">
+              <input class="checkbox" type="checkbox" name="souvenir" id="souvenir" checked>
+              <label class="label label--checkbox" for="souvenir">Накупил сувениров</label>
+          </li>
+          <li class="contest-feedback__item">
+              <input class="checkbox" type="checkbox" name="tower" id="tower" checked>
+              <label class="label label--checkbox" for="tower">Удержал башню</label>
+          </li>
+          <li class="contest-feedback__item">
+              <input class="checkbox" type="checkbox" name="hotel" id="hotel" checked>
+              <label class="label label--checkbox" for="hotel">Разгромил отель</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="contest-feedback__progress contest-feedback__progress--emotion">
+          <legend class="contest-feedback__title">Опишите свои эмоции</legend>
+          <textarea class="text-textarea" name="textarea" id="text" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+      </fieldset>
+      <input class="contest-feedback__submit" type="submit" value="Отправить форму">
+    </form>
+    </section>
 
-    <!-- Форма -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <footer class="main-footer">
       <a class="main-footer__logo" href="#"><svg xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink" width="147" height="40" viewBox="0 0 147 40">

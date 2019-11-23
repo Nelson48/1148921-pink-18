@@ -4,53 +4,43 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
-  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header">
-    <nav class="main-nav">
+    <nav class="page-header__main-nav main-nav">
       <div class="main-nav__top">
-        <a class="main-nav__logo" href="#"><img class="main-nav__logo-img" src="https://via.placeholder.com/50x50" width="50" height="50" alt="Логотип сайта Pink"></a>
-        <a class="main-nav_burger" href="#"></a>
+        <a class="main-nav__logo logo logo--header" href="#">
+          <img class="main-nav__logo-img" src="https://via.placeholder.com/50x50" width="50" height="50" alt="Логотип сайта Pink">
+        </a>
+        <button class="main-nav__burger" type="button" href="#" aria-label="открыть/закрыть меню"></button>
       </div>
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a class="main-nav__link" href="#">
-            Главная
-          </a>
+          <a class="main-nav__link">Главная</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="#">
-            Фотографии
-          </a>
+          <a class="main-nav__link" href="photo.html">Фотографии</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="#">
-            Конкурс
-          </a>
+          <a class="main-nav__link" href="form.html">Конкурс</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="https://htmlacademy.ru">
-            html academy
-          </a>
+<!--почитать в тз куда ведет ссылка-->
+          <a class="main-nav__link" href="https://htmlacademy.ru">html academy</a>
         </li>
       </ul>
     </nav>
   </header>
   <main>
-    <div class="head-title">
-      <h2 class="head-title__title">
-        Фотографии пользователей
-      </h2>
+    <div class="head-title__wrapper head-title__wrapper--title">
+      <h1 class="head-title__title">Фотографии пользователей</h1>
     </div>
     <div class="question-info">
-      <p class="question-info_text">
-        Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
-      </p>
+      <p class="question-info_text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
     </div>
     <section class="users-photo">
-      <div class="users-review">
+      <div class="users-review users-review__list">
         <img class="users-review__photo" src="https://via.placeholder.com/150x150" alt="#">
         <p class="users-review__name"><b>Анна</b> (5 минут назад)</p>
         <p class="users-review__text">
@@ -61,7 +51,7 @@
           Нравится: 215
         </span>
       </div>
-      <div class="users-review">
+      <div class="users-review users-review__list">
         <img class="users-review__photo" src="https://via.placeholder.com/150x150" alt="#">
         <p class="users-review__name"><b>Левон</b> (5 часов назад)</p>
         <p class="users-review__text">
@@ -71,7 +61,7 @@
           Нравится: 356
         </span>
       </div>
-      <div class="users-review">
+      <div class="users-review users-review__list">
         <img class="users-review__photo" src="https://via.placeholder.com/150x150" alt="#">
         <p class="users-review__name"><b>Антон</b> (12 часов назад)</p>
         <p class="users-review__text">
@@ -81,7 +71,7 @@
           Нравится: 666
         </span>
       </div>
-      <div class="users-review">
+      <div class="users-review users-review__list">
         <img class="users-review__photo" src="https://via.placeholder.com/150x150" alt="#">
         <p class="users-review__name"><b>Борис</b> (20 часов назад)</p>
         <p class="users-review__text">
@@ -91,7 +81,7 @@
           Нравится: 215
         </span>
       </div>
-      <div class="users-review">
+      <div class="users-review users-review__list">
         <img class="users-review__photo" src="https://via.placeholder.com/150x150" alt="#">
         <p class="users-review__name"><b>Сергей</b> (25 часов назад)</p>
         <p class="users-review__text">
