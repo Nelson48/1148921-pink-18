@@ -8,48 +8,40 @@
 
 <body>
   <header class="page-header">
-    <nav class="main-nav">
+    <nav class="page-header__main-nav main-nav">
       <div class="main-nav__top">
-        <a class="main-nav__logo" href="#">PINK</a>
-        <a class="main-nav_burger" href="#"></a>
+        <a class="main-nav__logo logo logo--header" href="#">
+          <img class="main-nav__logo-img" src="https://via.placeholder.com/50x50" width="50" height="50" alt="Логотип сайта Pink">
+        </a>
+        <button class="main-nav__burger" type="button" href="#" aria-label="открыть/закрыть меню"></button>
       </div>
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a class="main-nav__link" href="#">
-            Главная
-          </a>
+          <a class="main-nav__link">Главная</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="#">
-            Фотографии
+          <a class="main-nav__link" href="photo.html">Фотографии</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="#">
-            Конкурс
-          </a>
+          <a class="main-nav__link" href="form.html">Конкурс</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="#">
-            html academy
-          </a>
+<!--почитать в тз куда ведет ссылка-->
+          <a class="main-nav__link" href="https://htmlacademy.ru">html academy</a>
         </li>
       </ul>
     </nav>
   </header>
   <main>
-    <div class="head-title">
-      <h2 class="head-title__title">
-        Фотографии пользователей
-      </h2>
+    <div class="head-title__wrapper head-title__wrapper--title">
+      <h1 class="head-title__title">Фотографии пользователей</h1>
     </div>
     <div class="question-info">
-      <p class="question-info_text">
-        Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
-      </p>
+      <p class="question-info_text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
     </div>
     <section class="users-photo">
-      <div class="users-review">
-        <img class="users-review__photo" src="https://via.placeholder.com/150x150">
+      <div class="users-review users-review__list">
+        <img class="users-review__photo" src="https://via.placeholder.com/150x150" alt="#">
         <p class="users-review__name"><b>Анна</b> (5 минут назад)</p>
         <p class="users-review__text">
           Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои
@@ -59,8 +51,8 @@
           Нравится: 215
         </span>
       </div>
-      <div class="users-review">
-        <img class="users-review__photo" src="https://via.placeholder.com/150x150">
+      <div class="users-review users-review__list">
+        <img class="users-review__photo" src="https://via.placeholder.com/150x150" alt="#">
         <p class="users-review__name"><b>Левон</b> (5 часов назад)</p>
         <p class="users-review__text">
           Вчера он на луну летал, сегодня в руки к нам попал.
@@ -69,8 +61,8 @@
           Нравится: 356
         </span>
       </div>
-      <div class="users-review">
-        <img class="users-review__photo" src="https://via.placeholder.com/150x150">
+      <div class="users-review users-review__list">
+        <img class="users-review__photo" src="https://via.placeholder.com/150x150" alt="#">
         <p class="users-review__name"><b>Антон</b> (12 часов назад)</p>
         <p class="users-review__text">
           Соседи будут рады!
@@ -79,8 +71,8 @@
           Нравится: 666
         </span>
       </div>
-      <div class="users-review">
-        <img class="users-review__photo" src="https://via.placeholder.com/150x150">
+      <div class="users-review users-review__list">
+        <img class="users-review__photo" src="https://via.placeholder.com/150x150" alt="#">
         <p class="users-review__name"><b>Борис</b> (20 часов назад)</p>
         <p class="users-review__text">
           Здесь могла быть ваша цитата о высоком и вечном.
@@ -89,8 +81,8 @@
           Нравится: 215
         </span>
       </div>
-      <div class="users-review">
-        <img class="users-review__photo" src="https://via.placeholder.com/150x150">
+      <div class="users-review users-review__list">
+        <img class="users-review__photo" src="https://via.placeholder.com/150x150" alt="#">
         <p class="users-review__name"><b>Сергей</b> (25 часов назад)</p>
         <p class="users-review__text">
           Самая кубанская в мире!
@@ -100,7 +92,7 @@
         </span>
       </div>
       <div class="users-review">
-        <img class="users-review__photo" src="https://via.placeholder.com/150x150">
+        <img class="users-review__photo" src="https://via.placeholder.com/150x150" alt="#">
         <p class="users-review__name"><b>Максим</b> (40 часов назад)</p>
         <p class="users-review__text">
           Где снег-то?
@@ -110,7 +102,7 @@
         </span>
       </div>
       <div class="users-review">
-        <img class="users-review__photo" src="https://via.placeholder.com/150x150">
+        <img class="users-review__photo" src="https://via.placeholder.com/150x150" alt="#">
         <p class="users-review__name"><b>Надежда</b> (45 часов назад)</p>
         <p class="users-review__text">
           Всем GM и взаимные лайки!
@@ -126,27 +118,22 @@
       </p>
     </div>
     <footer class="main-footer">
-      <a class="main-footer__logo" href="#"><svg xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink" width="147" height="40" viewBox="0 0 147 40">
-          <g>
-            <g>
-              <image width="147" height="40"
-                xlink:href="data:image/png;base64,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" />
-            </g>
-          </g>
-        </svg></a>
+      <a class="main-footer__logo" href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="147" height="40" viewBox="0 0 147 40">
+        <image id="logotype-blue-desktop.svg" width="147" height="40" xlink:href="data:img/png;base64,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"/>
+      </svg>
+      </a>
       <ul class="main-footer__social-list">
         <li class="main-footer__social-item">
           <a class="main-footer_social-link"><img class="users-review__photo"
-              src="https://via.placeholder.com/50x50"></a>
+              src="https://via.placeholder.com/50x50" alt="#"></a>
         </li>
         <li class="main-footer__social-item">
           <a class="main-footer_social-link"><img class="users-review__photo"
-              src="https://via.placeholder.com/50x50"></a>
+              src="https://via.placeholder.com/50x50" alt="#"></a>
         </li>
         <li class="main-footer__social-item">
           <a class="main-footer_social-link"><img class="users-review__photo"
-              src="https://via.placeholder.com/50x50"></a>
+              src="https://via.placeholder.com/50x50" alt="#"></a>
         </li>
       </ul>
       <p class="main-footer__developed">
