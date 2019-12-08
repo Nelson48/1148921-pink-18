@@ -4,17 +4,27 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
-  <link href="../css/style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header">
-    <nav class="page-header__main-nav main-nav">
+    <nav class="page-header__main-nav main-nav main-nav--nojs">
       <div class="main-nav__top">
-        <a class="main-nav__logo logo logo--header" href="#">
-          <img class="main-nav__logo-img" src="https://via.placeholder.com/50x50" width="50" height="50" alt="Логотип сайта Pink">
+        <a class="main-nav__logo logo logo--header">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+            <img class="logo__img" src="img/logo-pink-white-mobile.svg" alt="Пинк" width="75" height="22">
+          </picture>
         </a>
-        <button class="main-nav__burger" type="button" href="#" aria-label="открыть/закрыть меню"></button>
+        <button class="main-nav__burger" type="button" aria-label="открыть/закрыть меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
       <ul class="main-nav__list">
         <li class="main-nav__item">
@@ -28,10 +38,13 @@
         </li>
         <li class="main-nav__item">
 <!--почитать в тз куда ведет ссылка-->
-          <a class="main-nav__link" href="https://htmlacademy.ru">html academy</a>
+          <a class="main-nav__link" href="https://htmlacademy.ru">HTML Academy</a>
         </li>
       </ul>
     </nav>
+    <div class="page-header__container">
+      <div class="page-header__background"></div>
+    </div>
   </header>
   <main>
     <h1 class="visually-hidden">Приложение Pink</h1>
@@ -39,8 +52,8 @@
     <section class="promo">
 
       <h2 class="visually-hidden">Скачайте приложение</h2>
-      <b class="promo__text">Взгляните на жизнь иначе!</b>
-      <a class="promo__download-link" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
+      <b class="promo__text">Взгляните на жизнь<br> иначе!</b>
+      <a class="promo__download-button button " href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
       <ul class="promo__app-list">
         <li class="promo__app-item">
           <a class="promo__app-link promo__app-link--ios" href="#" aria-label="Приложение для Iphone"></a>
@@ -85,7 +98,6 @@
 
     <section class="reviews">
       <h2 class="visually-hidden">Отзывы пользователей</h2>
-<!--Еще раз посмотреть и добавить недостающие блоки. Сверстать скопированное.-->
       <ul class="reviews__list">
         <li class="reviews__item">
           <blockquote class="reviews__quote">
@@ -115,7 +127,7 @@
         <button class="toggles__item" type="button" aria-label="Цитата 3"></button>
       </div>
     </section>
-    <section class="price">
+    <section class="price" style="display: none">
 
       <h2 class="visually-hidden">Тарифы</h2>
       <table class="price__table">
@@ -173,11 +185,10 @@
           <p class="contacts__sub-title">Приезжайте в гости:</p>
           <p class="contacts__address">ул. Большая Конюшенная, 19/8</p>
         </div>
-<!--        В дальнейшем будет карта-->
 
     </section>
   </main>
-  <footer class="main-footer">
+  <footer class="main-footer" style="display: none">
     <a class="main-footer__logo" href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="147" height="40" viewBox="0 0 147 40">
       <image id="logotype-blue-desktop.svg" width="147" height="40" xlink:href="data:img/png;base64,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"/>
     </svg>
@@ -205,6 +216,7 @@
     </p>
 
   </footer>
+<!--  <script src="js/menu.js"></script>-->
 </body>
 
 </html>
