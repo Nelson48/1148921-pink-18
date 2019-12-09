@@ -1,14 +1,41 @@
 .promo {
   width: 100%;
+  position: relative;
 }
 
 .promo__text {
+  display: block;
   font-size: 24px;
   text-align: center;
-  color: @black;
+  color: @white;
   font-weight: 300;
   padding-top: 85px;
   line-height: 30px;
+}
 
+.promo-header {
+  top: -66px;
+  left: 0;
+  width: 100%;
+  min-height: 462px;
+  background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  z-index: 1;
+}
+
+.promo-header::before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 458px;
+  height: 314px;
+  top: 148px;
+  left: 50%;
+  margin-left: -274px;
+  background-image: url(../img/iphone-hand-mobile@1x.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
 
 }
